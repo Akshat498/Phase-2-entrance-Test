@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sunflower:wght@300&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Sunflower:wght@300&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+
+.ul-text {
+    font-family: "Sunflower", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.buton-1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Sunflower", sans-serif;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 82px;
+    border: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+}
+
+.name {
+    color: white;
+    line-height: 80px;
+}
+
+nav {
+    margin-bottom: -1px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: #070402;
+}
+
+.menuLink {
+    gap: 40px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.bg-color {
+    background-color: black;
+}
+
+.box {
+    background-image: url(/assets/image/Rectangle\ 2.png);
+    max-width: 1440px;
+    height: 726px;
+}
+
+.bold-text {
+    font-family: "Sunflower", sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+    max-width: 546px;
+    line-height: 69.56px;
+    color: white;
+    margin-top: 100px;
+}
+
+.short-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28.8px;
+    max-width: 538px;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.buton-2 {
+    padding-left: 22px;
+    padding-right: 22px;
+    text-align: center;
+    border-radius: 82px;
+    border: none;
+}
+
+.btn-text {
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Sunflower", sans-serif;
+    line-height: 20px;
+}
+
+.buton-3 {
+    font-weight: 300;
+    font-style: 16px;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 82px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.part-1 {
+    margin-left: 150px;
+}
+
+.cards {
+    margin-top: 100px;
+    margin-left: 154px;
+}
+
+.btn-parent {
+    margin-top: 40px;
+}
+
+.basic-text {
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 60.86px;
+    font-family: "Sunflower", sans-serif;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.arrow {
+    bottom: 5%;
+    left: 36%;
+}
+
+.card-1 {
+    max-width: 263px;
+    background-color: #202020;
+    border-radius: 12px;
+    border: 1px solid #FFFFFF1A;
+
+}
+
+.text {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Sunflower", sans-serif;
+    color: white;
+}
+
+.single-text {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    margin-left: 16px;
+}
+
+.img {
+    max-width: 231px;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-right: 16px;
+
+
+
+}
+
+.text-parent {}
+
+/* 
+ul li a {}
+ */
+
+/* nav-responsive  */
+@media (max-width:992px) {
+    nav {
+        z-index: 9;
+        position: fixed;
+        background-color: black;
+    }
+
+    .menuLink {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        transition: all 200ms linear;
+    }
+
+
+    label[for="menuIcon"] {
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    label[for="menuIcon"] span {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 200ms linear;
+    }
+
+    input:checked~.menuLink {
+        right: 0;
+    }
+
+    input:checked~label[for="menuIcon"] span:first-child {
+        transform: rotate(30deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="menuIcon"] span:last-child {
+        transform: rotate(-30deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="menuIcon"] span:nth-child(2) {
+        transform: translateX(-40px);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
